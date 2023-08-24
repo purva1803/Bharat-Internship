@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    padding: 0px;
+    margin: 0px;
+    overflow-y: hidden;
+    background: #000;
+}
+.root{
+    background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(background.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    padding-top: 1%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.img-logo{
+    width: 14%;
+    color: #e50914;
+    padding-top:10px ;
+    margin-left: 60px;
+    
+}
+nav button{
+    background: #db0001;
+    align-items: center;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 25px;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.language{
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.language img {
+    width: 10px;
+    margin-left: 10px;
+}
+.main-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-titles-container{
+
+    width: 70%;
+    text-align: center;
+    line-height: 1.1em;
+}
+.main-title{
+    font-size: 3.2em;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.main-subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.main-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+.main-container-email{
+    width: 55%;
+    height: fit-content;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 18px 30px;
+}
+.email{
+    outline: none;
+    border: none;
+    padding: 20px 10px;
+    font-size: 1em;
+    background-color: transparent;
+    border-style: outset;
+    flex: 1;
+    margin-left: 40px;
+}
+.button-content{
+    cursor: pointer;
+    padding: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+    background-color: #e50914;
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 10px;
+}
+.button-content:hover{
+    background-color: #ff0b18;
+}
+#coloredDiv{
+    width: 100px;
+    height: 7px;
+    background-color: #333;
+    padding: 0px 732px;
+}
+.features{
+    padding: 0px 18%px;
+    font-size: 22px;
+    background-color:black;
+}
+.features h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.features #coloredDiv{
+    width: 100px;
+    height: 7px;
+    background-color: #333;
+    padding: 0px 732px;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;   
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.faq{
+    padding: 30px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-size: 40px;
+    font-family:Helvetica;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .faq-answer{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordian input[type="radio"]:checked + label + .faq-answer{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .main-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq .main-container-email{
+    width: 55%;
+    height: fit-content;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 18px 30px;
+    
+   
+}
+.faq .email{
+    max-width: 600px;
+    outline: none;
+    border: none;
+    padding: 20px 120px;
+    font-size: 1em;
+    background-color: transparent;
+    border-style: outset;
+    flex: 1;
+    margin-left: 210px;
+    justify-content: space-between;
+}
+.faq .button-content{
+    cursor: pointer;
+    padding: 10px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+    background-color: #e50914;
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 50px;
+    text-align: center;
+    
+}
+
+.faq small{
+    font-size: 20px;
+}
+.footer{
+    padding: 20px 80px;
+    border-top: 6px solid #333;
+    color: #777;
+    margin-left: 70px;
+    margin-left: 0;
+    padding-top: 30px;
+}
+.footer h2{
+    font-size:18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language{
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
